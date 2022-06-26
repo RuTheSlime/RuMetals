@@ -8,20 +8,21 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.ru.rumetals.block.ModBlocks;
+import net.ru.rumetals.item.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(RuMetals.MOD_ID)
-public class RuMetals
-{
-
+public class RuMetals {
     public static final String MOD_ID = "rumetals";
-
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public RuMetals()
-    {
+    public RuMetals() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

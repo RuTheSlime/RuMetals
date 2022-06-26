@@ -1,0 +1,10 @@
+{
+  "item.rumetals.mithril": "Mithril Ingot",
+  "item.rumetals.raw_mithril": "Raw Mithril",
+
+  "block.rumetals.mithril_block": "Mithril Block",
+  "block.rumetals.mithril_roe": "Mithril Ore",
+  "block.rumetals.deepslate_mithril_ore": "Deepslate Mithril Ore",
+
+  "itemGroup.rumetaltab": "Ru's Metals"
+}
