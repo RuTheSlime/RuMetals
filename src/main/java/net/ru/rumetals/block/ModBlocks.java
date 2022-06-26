@@ -23,13 +23,13 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, RuMetals.MOD_ID);
 
-    public static final RegistryObject<Block> MITHRIL_ORE = registerBlock("mithirl_ore",
+    public static final RegistryObject<Block> MITHRIL_ORE = registerBlock("mithril_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(), UniformInt.of(2,4)), ModCreativeModeTab.RU_METALS_TAB);
-    public static final RegistryObject<Block> DEEPSLATE_MITHRIL_ORE = registerBlock("deepslate_mithirl_ore",
+    public static final RegistryObject<Block> DEEPSLATE_MITHRIL_ORE = registerBlock("deepslate_mithril_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(8f).requiresCorrectToolForDrops(), UniformInt.of(2,4)), ModCreativeModeTab.RU_METALS_TAB);
-    public static final RegistryObject<Block> MITHRIL_BLOCK = registerBlock("mithirl_block",
+    public static final RegistryObject<Block> MITHRIL_BLOCK = registerBlock("mithril_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.RU_METALS_TAB);
 
